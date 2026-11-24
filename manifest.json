@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Ignore login popup reddit",
+    "version": "0.5",
+    "description": "Automatically removes the Reddit login prompt.",
+    "content_scripts": [
+    {
+        "matches": ["*://*.reddit.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+    }
+]
+    
+}
